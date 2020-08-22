@@ -1,3 +1,7 @@
+import { Styled } from "theme-ui";
+
+<!-- Not getting theme styles -->
+
 # Hello
 
 This is an example of using [Theme UI][] with [Next.js][].
@@ -6,3 +10,16 @@ This page is written in [MDX][] and styled with Theme UI.
 [next.js]: https://github.com/zeit/next.js
 [theme ui]: https://theme-ui.now.sh
 [mdx]: https://mdxjs.com
+
+<!-- Should look like this -->
+
+<Box mt="3" mb="3">
+  <Styled.h1>Hello</Styled.h1>
+  <Styled.p>
+    This is an example of using{" "}
+    <Styled.a src="https://theme-ui.now.sh">Theme UI</Styled.a> with{" "}
+    <Styled.a src="https://github.com/zeit/next.js">Next.js</Styled.a>. This
+    page is written in <Styled.a src="https://mdxjs.com">MDX</Styled.a> and
+    styled with Theme UI.
+  </Styled.p>
+</Box>
